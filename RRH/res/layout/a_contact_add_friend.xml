@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg_grey_color"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp" >
+
+        <EditText
+            android:id="@+id/contact_listview_user_nickName_item"
+            style="@style/edittext_style_small_radius_border"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:focusable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="@string/comment_search" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/contacts_seach_icon" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center_vertical"
+            android:text="我的人人会ID：123456789"
+            android:textColor="@color/font_color_cccccc" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:src="@drawable/menu_qrcode_icon" />
+    </FrameLayout>
+
+    <Button
+        style="@style/button_style_rectangle"
+        android:drawableLeft="@drawable/contact_find_business_icon"
+        android:text="@string/home_contact_find_business" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_rectangle"
+        android:drawableLeft="@drawable/contact_scan_icon"
+        android:text="@string/home_contact_scan" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_rectangle"
+        android:drawableLeft="@drawable/contact_mobile_person_icon"
+        android:text="@string/home_contact_mobile_person" />
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+    
+</LinearLayout>

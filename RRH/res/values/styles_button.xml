@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- button 公共样式 -->
+    <style name="button_style_comment" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_color_666666</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- button 矩形有边框 -->
+    <style name="button_style_rectangle_border" parent="@style/button_style_comment">
+        <item name="android:background">@drawable/button_while_rectangle_border_bg</item>
+    </style>
+    <!-- button 矩形无边框 -->
+    <style name="button_style_rectangle" parent="@style/button_style_comment">
+        <item name="android:background">@drawable/button_while_rectangle_bg</item>
+    </style>
+
+</resources>

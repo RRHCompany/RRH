@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- edittext 颜色 -->
+    <color name="edittext_bg">#ffffff</color>
+    <color name="edittext_border">#e5e5e5</color>
+    
+    <!-- button 颜色 -->
+    <color name="button_while_bg_color">#ffffff</color>
+	<color name="button_while_select_bg_color">#fff4c2</color>
+	<color name="button_while_border_color">#e5e5e5</color>
+</resources>

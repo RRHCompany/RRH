@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="red">#7f00</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+
+    <!-- 背景颜色 -->
+    <color name="app_bg_color">#ffffff</color>
+    <color name="app_bg_grey_color">#e9e9e9</color>
+    <!-- 整体颜色 -->
+    <color name="app_global_color">#e73336</color>
+    <!-- 头部 -->
+    <color name="header_bg_color">#423d3a</color>
+    <color name="header_title_text_color">#ffffff</color>
+    <color name="header_other_text_color">#ffffff</color>
+    <color name="header_other_bg_color">#d82225</color>
+    <!-- 底部 -->
+    <color name="footer_bg_color">#262626</color>
+    <color name="footer_bg_select_color">#121313</color>
+    <color name="footer_tab_text_color">#b3b3b3</color>
+    <color name="footer_tab_select_text_color">#ffffff</color>
+
+    <!-- 字体颜色 -->
+    <color name="font_hint_color">#999999</color> <!-- 输入框hid颜色 -->
+    <color name="font_black">#000000</color>
+    <color name="font_color_666666">#666666</color> <!-- 灰色字体颜色 -->
+    <color name="font_color_333333">#333333</color> <!-- 灰色字体颜色 -->
+    <color name="font_color_999999">#999999</color> <!-- 灰色字体颜色 -->
+    <color name="font_color_cccccc">#cccccc</color> 
+
+    <!-- 线条颜色 -->
+    <color name="line_dark_color">#e4e3e3</color><!-- 深灰色-->
+    <color name="line_light_color">#f6f6f6</color><!-- 浅灰色-->
+    <color name="line_grey_color">#dddddd</color><!-- 灰色-->
+    
+
+</resources>
