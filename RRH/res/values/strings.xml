@@ -1,5 +1,28 @@
 <resources>
 
-    <string name="app_name">RRH</string>
+    <string name="app_name">人人慧</string>
+    <string name="app_channel">android</string>
 
+    <!-- xlist -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <!-- 公共的 -->
+    <string name="comment_search">搜索</string>
+    <string name="comment_edit">编辑</string>
+    <string name="comment_save">保存</string>
+    <string name="comment_modify">修改</string>
+    <string name="comment_add">新增</string>
+    <string name="comment_cancel">取消</string>
+    <string name="comment_confirm">确定</string>
+    <string name="comment_submit">提交</string>
+    <string name="comment_done">完成</string>
+    <string name="comment_delete">删除</string>
+    <string name="comment_choose">选择</string>
+    <string name="comment_clear">清空</string>
+    <string name="comment_send">发送</string>
 </resources>
