@@ -29,24 +29,22 @@ public class ContactFragment extends Fragment implements SwitchGroup.ItemHander,
 	private ContactsAdapter adapter;
     private ListView listView;
     private SwitchGroup switchGroup;
-    private List<Friend> friendsList;
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.a_contact, null);
-        listView = (ListView) view.findViewById(R.id.contact_friend_lv);
-//        listView.addHeaderView(ViewUtils.getView(getActivity(), R.layout.a_contact_listview_header));
+        listView = (ListView) view.findViewById(R.id.comment_contact_listview_lv);
         listView.setFastScrollEnabled(false);
         listView.setHeaderDividersEnabled(false);
         listView.setFooterDividersEnabled(false);
-        
-        switchGroup = (SwitchGroup) view.findViewById(R.id.contact_friend_pinned);
+        switchGroup = (SwitchGroup) view.findViewById(R.id.comment_contact_listview_pinned);
         this.initListener();
         return view;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-    	friendsList = new ArrayList<Friend>();
+    	List<Friend> friendsList = new ArrayList<Friend>();
         for(int i=1;i<5;i++){
         	friendsList.add(new Friend(i, "A木头"+i, R.drawable.contacts_default_boy_icon));
         }
@@ -72,6 +70,9 @@ public class ContactFragment extends Fragment implements SwitchGroup.ItemHander,
         super.onViewCreated(view, savedInstanceState);
     }
 
+    public void setAdapterItem(int res){
+    	
+    }
     private void initListener(){
     	listView.setOnItemClickListener(this);
         switchGroup.setItemHander(this);
@@ -95,12 +96,20 @@ public class ContactFragment extends Fragment implements SwitchGroup.ItemHander,
     	Friend friend=adapter.getItem(position);
     	if(friend.getUserId()==ContactsAdapter.TYPE_ID_GROUP){
     		//群组
+    		Intent intent=new Intent(getActivity(),ContactGroupActivity.class);
+    		getActivity().startActivity(intent);
     	}else if(friend.getUserId()==ContactsAdapter.TYPE_ID_CREATE_TEAM){
     		//创建企业团队
     		Intent intent=new Intent(getActivity(),ContactCreateTeamActivity.class);
     		getActivity().startActivity(intent);
+    	}else if(friend.getUserId()==ContactsAdapter.TYPE_ID_GOODS_BUSINESS){
+    		//合作商品企业
+    		Intent intent=new Intent(getActivity(),ContactCombineBusinessActivity.class);
+    		getActivity().startActivity(intent);
     	}else if(friend.getUserId()==ContactsAdapter.TYPE_ID_NEW_FRIEND){
     		//新的好友
+    		Intent intent=new Intent(getActivity(),ContactNewFriendActivity.class);
+    		getActivity().startActivity(intent);
     	}
     }
 }

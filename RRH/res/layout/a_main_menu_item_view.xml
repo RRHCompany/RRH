@@ -3,21 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
-    android:orientation="horizontal" 
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp">
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp" 
+    android:background="@drawable/listview_item_bg">
 
     <ImageView
         android:id="@+id/main_menu_item_image_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
 
     <TextView
         android:id="@+id/main_menu_item_name_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:gravity="center"
+        android:textColor="@color/font_black"
         android:textSize="16sp" />
 
 </LinearLayout>

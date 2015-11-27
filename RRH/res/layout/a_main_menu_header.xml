@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/menu_top_bg" >
 
     <ImageView
         android:id="@+id/main_menu_image_view"
@@ -19,9 +20,6 @@
         android:gravity="center"
         android:text="jason"
         android:textSize="18sp" />
-
-   
-
     <ImageView
         android:id="@+id/main_menu_qrcode"
         android:layout_width="30dp"

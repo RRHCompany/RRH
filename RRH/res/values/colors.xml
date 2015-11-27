@@ -12,7 +12,7 @@
     <!-- 整体颜色 -->
     <color name="app_global_color">#e73336</color>
     <!-- 头部 -->
-    <color name="header_bg_color">#423d3a</color>
+    <color name="header_bg_color">#433e3a</color>
     <color name="header_title_text_color">#ffffff</color>
     <color name="header_other_text_color">#ffffff</color>
     <color name="header_other_bg_color">#d82225</color>

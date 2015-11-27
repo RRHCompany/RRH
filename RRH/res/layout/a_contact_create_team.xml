@@ -139,7 +139,14 @@
 
         <EditText
             style="@style/edittext_style_null_border"
+            android:layout_weight="1"
             android:hint="" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/contact_create_team_location_icon" />
     </LinearLayout>
 
     <View
@@ -230,5 +237,13 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_fun"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_red_radius_bg"
+        android:text="@string/home_contact_create_team_btn" />
 
 </LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="more_title">更多</string>
+    
+    <!-- 我的企业 -->
+    <string name="my_business_title">我的企业</string>
+    
+    <!-- 认证中心 -->
+    <string name="auth_centre_title">认证中心</string>
+    
+    <!-- 绑定社交账号 -->
+    <string name="bind_social_account_title">绑定社交账号</string>
+    <!-- 反馈与帮助 -->
+    <string name="reaction_title">反馈与帮助</string>
+    
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+</resources>

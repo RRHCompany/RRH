@@ -1,9 +1,8 @@
 <resources>
 
     <string name="home_message_title">消息</string>
-    
     <string name="home_cloudTeam_title">云团队</string>
-
+    <!-- 通讯录 -->
     <string name="home_contact_title">通讯录</string>
     <string name="home_contact_group">群组</string>
     <string name="home_contact_create_team">创建企业团队</string>
@@ -13,13 +12,21 @@
     <string name="home_contact_find_business">查找企业</string>
     <string name="home_contact_scan">扫一扫</string>
     <string name="home_contact_mobile_person">手机联系人</string>
-    
     <string name="home_contact_add_friend_title">添加好友</string>
-    
+    <!-- 创建团队 -->
     <string name="home_contact_create_team_title">创建团队</string>
     <string name="home_contact_create_team_business_name">企业名称</string>
     <string name="home_contact_create_team_business_name_hint">输入企业名称</string>
     <string name="home_contact_create_team_team_name">团队名称</string>
     <string name="home_contact_create_team_team_name_hint">输入团队名称</string>
-   
+    <string name="home_contact_create_team_btn">创建团队</string>
+    <!-- 群组 -->
+    <string name="home_contact_group_title">群组</string>
+    <!-- 创建群组 -->
+    <string name="home_contact_create_group_title">选择好友</string>
+    <!-- 合作商品企业 -->
+    <string name="home_contact_combine_business_title">合作企业</string>
+    <!-- 新的好友 -->
+    <string name="home_contact_new_friend_title">新的好友</string>
+    <string name="home_contact_new_friend_syn_mobile">同步手机联系人</string>
 </resources>

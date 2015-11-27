@@ -16,14 +16,14 @@
 
     <RelativeLayout
         android:id="@+id/main_menu_layout"
-        android:layout_width="180dp"
+        android:layout_width="220dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/white" >
 
         <ListView
             android:id="@+id/main_menu_listview"
-            android:layout_width="180dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/main_menu_footer_layout"
             android:background="@android:color/transparent"
@@ -37,23 +37,39 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:gravity="center_vertical"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >
 
             <Button
+                android:id="@+id/main_menu_setting_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/menu_setting_icon"
                 android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
                 android:text="设置"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_grey_color" />
 
             <Button
+                android:id="@+id/main_menu_msg_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/menu_msg_icon"
                 android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
                 android:text="通知"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </LinearLayout>
     </RelativeLayout>
 

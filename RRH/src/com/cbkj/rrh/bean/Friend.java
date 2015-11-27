@@ -26,6 +26,8 @@ public class Friend implements Serializable {
     
     private String nickNamePinyin;//昵称拼音
     
+    private String relation;//关系
+    
     private char searchKey;
     
     public Friend(){
@@ -121,5 +123,13 @@ public class Friend implements Serializable {
 
 	public void setGender(int gender) {
 		this.gender = gender;
+	}
+
+	public String getRelation() {
+		return relation;
+	}
+
+	public void setRelation(String relation) {
+		this.relation = relation;
 	}
 }

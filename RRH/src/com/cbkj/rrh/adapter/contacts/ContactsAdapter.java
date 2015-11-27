@@ -46,7 +46,7 @@ public class ContactsAdapter extends AbstractBaseAdapter<Friend> {
 	    		FriendHolder friendHolder=null;
 	    		if(convertView==null){
 	    			friendHolder=new FriendHolder();
-	        		convertView=mInflater.inflate(R.layout.a_contact_listview_user_item, null);
+	        		convertView=mInflater.inflate(R.layout.a_contact_listview_item, null);
 	        		friendHolder.iconView=(ImageView)convertView.findViewById(R.id.contact_listview_user_iocn_item);
 	        		friendHolder.nickNameView=(TextView)convertView.findViewById(R.id.contact_listview_user_nickName_item);
 	        		friendHolder.numberView=(TextView)convertView.findViewById(R.id.contact_listview_user_number_item);
@@ -65,7 +65,7 @@ public class ContactsAdapter extends AbstractBaseAdapter<Friend> {
 	    		TextHolder textHolder=null;
 	    		if(convertView==null){
 	    			textHolder=new TextHolder();
-	        		convertView=mInflater.inflate(R.layout.a_contact_listview_text_item, null);
+	        		convertView=mInflater.inflate(R.layout.a_comment_contact_listview_text_item, null);
 	        		textHolder.textView=(TextView)convertView.findViewById(R.id.contact_listview_text_item);
 	        		convertView.setTag(textHolder);
 	        	}else{
@@ -112,7 +112,7 @@ public class ContactsAdapter extends AbstractBaseAdapter<Friend> {
         ArrayList<Friend> friendList = new ArrayList<Friend>();
         friendList.add(new Friend(TYPE_ID_GROUP, mContext.getResources().getString(R.string.home_contact_group), R.drawable.contacts_group_icon));
         friendList.add(new Friend(TYPE_ID_CREATE_TEAM, mContext.getResources().getString(R.string.home_contact_create_team),R.drawable.contacts_create_team_icon));
-        friendList.add(new Friend(TYPE_ID_GOODS_BUSINESS, mContext.getResources().getString(R.string.home_contact_goods_business),R.drawable.contacts_goods_business_icon));
+        friendList.add(new Friend(TYPE_ID_GOODS_BUSINESS, mContext.getResources().getString(R.string.home_contact_goods_business),R.drawable.contacts_combine_business_icon));
         friendList.add(new Friend(TYPE_ID_NEW_FRIEND, mContext.getResources().getString(R.string.home_contact_new_friend), R.drawable.contacts_new_friend_icon));
         for (int i = 0; i < letters.length; i++) {
             String letter = letters[i];
@@ -125,12 +125,8 @@ public class ContactsAdapter extends AbstractBaseAdapter<Friend> {
         }
         return friendList;
     }
-    public Map<String, Integer> getLetterIndexMap() {
+	public Map<String, Integer> getLetterIndexMap() {
 		return letterIndexMap;
-	}
-
-	public void setLetterIndexMap(Map<String, Integer> letterIndexMap) {
-		this.letterIndexMap = letterIndexMap;
 	}
 
 	@Override

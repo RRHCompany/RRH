@@ -42,7 +42,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	public void onClick(View v) {
 		if(v==loginButton){
 			//正常登录
-			RongCore.connect(this, "uWN+8bhLbBpHCDBSDzLnEXd4E6mTUXoALTP/VaI7U7Bfo203mxcMcYnWMugUSYAwr1BSZU11TlJaX2P2brnAhw==");
+			RongCore.connect(this, "zQzCQAcsG3YMWUJqAswUjHd4E6mTUXoALTP/VaI7U7Bfo203mxcMcWtCfj2k+OEHiUirQ4F1POdaX2P2brnAhw==");
 			String mobile = userNameView.getText().toString().trim().toLowerCase();
 			String password = passwordView.getText().toString().trim();
 			

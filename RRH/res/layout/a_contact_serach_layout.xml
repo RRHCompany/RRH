@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg_grey_color"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp" >
+
+    <EditText
+        android:id="@+id/contact_seacth_layout_et"
+        style="@style/edittext_style_small_radius_border"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:focusable="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/home_contact_search" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/contacts_seach_icon" />
+
+</FrameLayout>

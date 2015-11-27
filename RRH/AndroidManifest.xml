@@ -64,7 +64,47 @@
             android:name="com.cbkj.rrh.ui.contacts.ContactCreateTeamActivity"
             android:screenOrientation="portrait" >
         </activity>
-
+        <activity
+            android:name="com.cbkj.rrh.ui.contacts.ContactGroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.contacts.ContactCreateGroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.contacts.ContactCombineBusinessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.contacts.ContactNewFriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.more.MoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.more.MyBusinessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.more.AuthCentreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.more.BindSocialAccountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.more.ReactionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cbkj.rrh.ui.more.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
         <!-- 融云 start -->
         <activity
             android:name="io.rong.voipkit.activity.CallSideActivity"

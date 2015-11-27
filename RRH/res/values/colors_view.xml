@@ -6,7 +6,13 @@
     <color name="edittext_border">#e5e5e5</color>
     
     <!-- button 颜色 -->
-    <color name="button_while_bg_color">#ffffff</color>
-	<color name="button_while_select_bg_color">#fff4c2</color>
-	<color name="button_while_border_color">#e5e5e5</color>
+    <color name="btn_while_bg_color">#ffffff</color>
+	<color name="btn_while_select_bg_color">#fff4c2</color>
+	<color name="btn_while_border_color">#e5e5e5</color>
+	
+	<color name="btn_red_bg_color">#ed6b58</color>
+	<color name="btn_red_select_bg_color">#ff715c</color>
+	<!-- listview 颜色 -->
+	<color name="listview_select_bg_color">#e0e0e0</color>
+	
 </resources>

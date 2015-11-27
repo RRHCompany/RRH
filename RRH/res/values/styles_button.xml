@@ -15,11 +15,26 @@
     </style>
     <!-- button 矩形有边框 -->
     <style name="button_style_rectangle_border" parent="@style/button_style_comment">
-        <item name="android:background">@drawable/button_while_rectangle_border_bg</item>
+        <item name="android:background">@drawable/btn_while_rectangle_border_bg</item>
     </style>
     <!-- button 矩形无边框 -->
     <style name="button_style_rectangle" parent="@style/button_style_comment">
-        <item name="android:background">@drawable/button_while_rectangle_bg</item>
+        <item name="android:background">@drawable/btn_while_rectangle_bg</item>
+    </style>
+    <!-- button 右箭头直角无边框样式 -->
+    <style name="button_style_rectangle_before" parent="@style/button_style_comment">
+        <item name="android:drawableRight">@drawable/arrow_right_gray_icon</item>
+        <item name="android:background">@drawable/btn_while_rectangle_bg</item>
+    </style>
+    <!-- button 右箭头直角无边框样式 -->
+    <style name="button_style_rectangle_border_before" parent="@style/button_style_comment">
+        <item name="android:drawableRight">@drawable/arrow_right_gray_icon</item>
+        <item name="android:background">@drawable/btn_while_rectangle_border_bg</item>
+    </style>
+    <!-- button 功能按钮 -->
+    <style name="button_style_fun" parent="@style/button_style_comment">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

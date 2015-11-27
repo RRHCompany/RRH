@@ -19,19 +19,19 @@ public class TitleBar implements OnClickListener{
 	private TextView titleView;
 	private TextView otherView;
 	private ImageView backView;
-	private TitleBarListener listener;
+	private TitleBarListener titleBarListener;
 	private MenuListener menuListener;
 	
 	public TitleBar(Activity activity,int title){
 		this(activity, null, null,null);
 		titleView.setText(activity.getResources().getString(title));
 	}
-	public TitleBar(Activity activity,View barView,TitleBarListener listener){
-		this(activity, barView, listener,null);
+	public TitleBar(Activity activity,View barView,TitleBarListener titleBarListener){
+		this(activity, barView, titleBarListener,null);
 	}
-	public TitleBar(Activity activity,View barView,TitleBarListener listener,MenuListener menuListener){
+	public TitleBar(Activity activity,View barView,TitleBarListener titleBarListener,MenuListener menuListener){
 		this.activity=activity;
-		this.listener=listener;
+		this.titleBarListener=titleBarListener;
 		this.menuListener=menuListener;
 		if(barView!=null){
 			this.barView=barView;
@@ -65,9 +65,13 @@ public class TitleBar implements OnClickListener{
 	}
 	//设置其他按钮
 	public void setOther(String text,int icon,Object tag){
-		otherView.setText(text);
+		if(text==null||text.equals("")){
+			otherView.setText("");
+		}else{
+			otherView.setText("");
+		}
 		otherView.setTag(tag);
-		if(icon==-1){
+		if(icon==0){
 			otherView.setCompoundDrawables(null, null,null , null); 
 		}else{
 			ViewUtils.setTextViewDrawables(activity, otherView, icon, 1);
@@ -86,8 +90,8 @@ public class TitleBar implements OnClickListener{
 				break;
 			case R.id.header_other_view:
 				//其他按钮
-				if(listener!=null){
-					listener.onHeaderOtherButton(v);
+				if(titleBarListener!=null){
+					titleBarListener.onHeaderOtherButton(v);
 				}
 				break;
 			case R.id.header_back_view:
@@ -96,7 +100,10 @@ public class TitleBar implements OnClickListener{
 				break;
 		}
 	}
-	
+	public void addTitleBarListener(TitleBarListener titleBarListener) {
+		this.titleBarListener = titleBarListener;
+	}
+
 	public static interface TitleBarListener{
 		public void onHeaderOtherButton(View v);
 	}

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <Button
+        style="@style/button_style_rectangle_before"
+        android:text="反馈问题" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_rectangle_before"
+        android:text="我的违规" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_rectangle_before"
+        android:text="产品功能使用" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_rectangle_before"
+        android:text="关于上到" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+</LinearLayout>

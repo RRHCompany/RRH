@@ -54,7 +54,7 @@ public class SwitchGroup extends ViewGroup {
         super.onAttachedToWindow();
         if (mPinnedView == null && mPinnedViewResId != 0) {
             View parentView = LayoutInflater.from(getContext()).inflate(mPinnedViewResId, (ViewGroup) this.getParent(), true);
-            mPinnedView = parentView.findViewById(R.id.contact_friend_pinned);
+            mPinnedView = parentView.findViewById(R.id.comment_contact_listview_pinned);
         }
     }
 

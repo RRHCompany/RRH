@@ -74,17 +74,17 @@ public class HomeFragment extends BaseFragment implements  ViewPager.OnPageChang
 			case 0:
 				messageView.setImageResource(R.drawable.home_tab_enable_icon1);
 				titleBar.setTitle(R.string.home_message_title);
-				titleBar.setOther("", R.drawable.home_scan_qecode_icon, "message");
+				titleBar.setOther(null, R.drawable.home_scan_qecode_icon, "message");
 				break;
 			case 1:
 				contactView.setImageResource(R.drawable.home_tab_enable_icon2);
 				titleBar.setTitle(R.string.home_contact_title);
-				titleBar.setOther("", R.drawable.home_add_friend_icon, "contact");
+				titleBar.setOther(null, R.drawable.home_add_friend_icon, "contact");
 				break;
 			case 2:
 				cloudteamView.setImageResource(R.drawable.home_tab_enable_icon3);
 				titleBar.setTitle(R.string.home_cloudTeam_title);
-				titleBar.setOther("公司资料", -1, "cloudTeam");
+				titleBar.setOther("公司资料", 0, "cloudTeam");
 				break;
 		}
 	}
