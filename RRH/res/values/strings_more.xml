@@ -15,4 +15,14 @@
     
     <!-- 设置 -->
     <string name="setting_title">设置</string>
+    <!-- 推送通知 -->
+    <string name="push_notice_title">推送通知</string>
+    <!-- 新消息通知 -->
+    <string name="new_msg_notice_title">新消息通知</string>
+    <!-- 账号与安全 -->
+    <string name="account_secure_title">账号与安全</string>
+    <!-- 消息免打扰 -->
+    <string name="msg_disturb_title">消息免打扰</string>
+    <!-- 编辑资料 -->
+    <string name="my_user_info_title">编辑个人资料</string>
 </resources>

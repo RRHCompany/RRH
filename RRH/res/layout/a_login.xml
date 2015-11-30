@@ -1,48 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="@drawable/login_bg"
+    android:padding="15dp" >
 
-    <include layout="@layout/header" />
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/login_logo_icon" />
+
+        <EditText
+            android:id="@+id/me_login_mobile_et"
+            style="@style/edittext_style_comment"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/login_user_name_icon"
+            android:gravity="center"
+            android:hint="输入手机号码或账号"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/me_login_password_et"
+            style="@style/edittext_style_comment"
+            android:layout_marginTop="15dp"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/login_pwd_icon"
+            android:gravity="center"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="忘记密码？"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/me_login_bt"
+            style="@style/button_style_fun"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_login_radius_bg"
+            android:text="登陆" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical" >
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="vertical" >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/login_qq_icon" />
 
-                <EditText
-                    android:id="@+id/me_login_mobile_et"
-                    style="@style/edittext_style_null_border"
-                    android:background="@color/transparent" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/login_weixin_icon" />
 
-              
-
-                <EditText
-                    android:id="@+id/me_login_password_et"
-                    style="@style/edittext_style_null_border"
-                    android:background="@color/transparent"
-                    android:inputType="textPassword" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/me_login_bt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="登陆"
-                android:layout_marginTop="30dp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/login_sina_icon" />
         </LinearLayout>
-    </ScrollView>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="第三方登陆"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

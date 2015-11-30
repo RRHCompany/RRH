@@ -58,6 +58,7 @@
         android:background="@color/line_light_color" />
 
     <Button
+        android:id="@+id/more_my_user_info_btn"
         style="@style/button_style_rectangle_before"
         android:text="编辑资料" />
 

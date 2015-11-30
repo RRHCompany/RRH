@@ -54,7 +54,7 @@
         android:paddingBottom="15dp"
         android:paddingTop="15dp"
         android:textColor="@color/header_other_text_color"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:visibility="gone" />
 
     <TextView

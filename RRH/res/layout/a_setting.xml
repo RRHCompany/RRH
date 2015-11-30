@@ -8,6 +8,7 @@
     <include layout="@layout/header" />
 
     <Button
+        android:id="@+id/setting_account_secure_btn"
         style="@style/button_style_rectangle_before"
         android:text="账号与安全" />
 
@@ -17,6 +18,7 @@
         android:background="@color/line_light_color" />
 
     <Button
+        android:id="@+id/setting_new_msg_notice_btn"
         style="@style/button_style_rectangle_before"
         android:text="新消息通知" />
 
@@ -26,6 +28,7 @@
         android:background="@color/line_light_color" />
 
     <Button
+        android:id="@+id/setting_push_notice_btn"
         style="@style/button_style_rectangle_before"
         android:text="推送消息设置" />
 
@@ -45,6 +48,11 @@
             android:text="开启内置音效"
             android:textColor="@color/font_color_666666"
             android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
     </FrameLayout>
 
     <View
@@ -52,10 +60,7 @@
         android:layout_height="1dp"
         android:background="@color/line_light_color" />
 
-    <FrameLayout
-        style="@style/button_style_rectangle_before"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+    <FrameLayout style="@style/button_style_rectangle" >
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,6 +68,20 @@
             android:text="清除缓存"
             android:textColor="@color/font_color_666666"
             android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:text="30MB"
+            android:textColor="@color/font_color_999999"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/arrow_right_gray_icon" />
     </FrameLayout>
 
     <View

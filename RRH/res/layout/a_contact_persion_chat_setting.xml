@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/toggle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/fl_left_textview_style"
+            android:text="置顶聊天" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/fl_left_textview_style"
+            android:text="消息免打扰" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_rectangle"
+        android:text="清空聊天纪录" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <Button
+        style="@style/button_style_rectangle"
+        android:text="举报" />
+
+</LinearLayout>

@@ -29,4 +29,18 @@
     <!-- 新的好友 -->
     <string name="home_contact_new_friend_title">新的好友</string>
     <string name="home_contact_new_friend_syn_mobile">同步手机联系人</string>
+    
+    <!-- 聊天窗口 -->
+    <string name="contact_chat_discussion_group_title">讨论组</string>
+    <string name="contact_chat_title1">系统会话类型</string>
+    <string name="contact_chat_title2">聊天室</string>
+    <string name="contact_chat_title3">客服</string>
+    <string name="contact_chat_title4">讨论组</string>
+    <!-- 个人聊天 -->
+    <string name="contact_persion_chat_setting_title">聊天设置</string>
+    <!-- 普通群聊天 -->
+    <string name="contact_group_normal_chat_setting_title">群设置</string>
+    <!-- 认证群群聊天 -->
+    <string name="contact_group_business_chat_setting_title">设置</string>
+    <string name="contact_group_business_chat_persion_setting_title">个人设置</string>
 </resources>

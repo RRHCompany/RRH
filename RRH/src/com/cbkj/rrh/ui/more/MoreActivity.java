@@ -18,7 +18,7 @@ public class MoreActivity extends BaseActivity implements OnClickListener {
 	
 	private TitleBar titleBar;
 	
-	private View myBusinessBtn,authCentreBtn,bindSocialAccountBtn,reactionBtn,settingBtn;
+	private View myBusinessBtn,authCentreBtn,bindSocialAccountBtn,reactionBtn,settingBtn,myUserInfoBtn;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,8 @@ public class MoreActivity extends BaseActivity implements OnClickListener {
 		bindSocialAccountBtn=this.findViewById(R.id.more_bind_social_account_btn);
 		reactionBtn=this.findViewById(R.id.more_reaction_btn);
 		settingBtn=this.findViewById(R.id.more_setting_btn);
+		myUserInfoBtn=this.findViewById(R.id.more_my_user_info_btn);
+		
 	}
 	private void initListener(){
 		myBusinessBtn.setOnClickListener(this);
@@ -42,6 +44,7 @@ public class MoreActivity extends BaseActivity implements OnClickListener {
 		bindSocialAccountBtn.setOnClickListener(this);
 		reactionBtn.setOnClickListener(this);
 		settingBtn.setOnClickListener(this);
+		myUserInfoBtn.setOnClickListener(this);
 	}
 	@Override
 	public void onClick(View v) {
@@ -50,6 +53,11 @@ public class MoreActivity extends BaseActivity implements OnClickListener {
 			case R.id.more_my_business_rl:
 				//我的企业
 				intent=new Intent(this,MyBusinessActivity.class);
+				this.startActivity(intent);
+				break;
+			case R.id.more_my_user_info_btn:
+				//编辑资料
+				intent=new Intent(this,MyUserInfoActivity.class);
 				this.startActivity(intent);
 				break;
 			case R.id.more_auth_centre_btn:

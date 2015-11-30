@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="代图通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成任务通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成代图通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支持通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新好友加入通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_light_color" />
+
+    <FrameLayout
+        style="@style/button_style_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小秘书通知"
+            android:textColor="@color/font_color_666666"
+            android:textSize="16sp" />
+
+        <CheckBox
+            style="@style/checkBox_switch_style"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false" />
+    </FrameLayout>
+
+</LinearLayout>

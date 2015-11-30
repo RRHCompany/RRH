@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="25dp" >
+
+        <Button
+            android:id="@+id/albumButton"
+            style="@style/button_style_fun"
+            android:background="@drawable/btn_red_radius_bg"
+            android:text="从照片库选取"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/cameraButton"
+            style="@style/button_style_fun"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_red_radius_bg"
+            android:text="拍摄新照片"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/upload_image_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dialog_colse_icon"/>
+
+</FrameLayout>

@@ -3,6 +3,7 @@ package com.cbkj.rrh;
 import io.rong.imkit.RongIM;
 import android.app.Application;
 
+import com.cbkj.rrh.code.im.rong.RongCloudEvent;
 import com.cbkj.rrh.comment.utils.SystemUtils;
 
 public class RApplication extends Application{
@@ -18,7 +19,7 @@ public class RApplication extends Application{
              * 注册相关代码，只需要在主进程里做。
              */
             if ("com.cbkj.rrh".equals(SystemUtils.getCurProcessName(getApplicationContext()))) {
-//                RongCloudEvent.init(this);
+                RongCloudEvent.init(this);
 //                DemoContext.init(this);
 //                Thread.setDefaultUncaughtExceptionHandler(new RongExceptionHandler(this));
 //                try {

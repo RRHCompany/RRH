@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/toggle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.cbkj.rrh.view.GridViewNoScroll
+                android:id="@+id/group_normal_chat_setting_friends_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="5"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:verticalSpacing="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/fl_left_textview_style"
+                    android:text="群名称" />
+
+                <TextView
+                    style="@style/fl_right_textview_style"
+                    android:text="追寻美网络科技有限公司" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/fl_left_textview_style"
+                    android:text="群二维码" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/menu_qrcode_icon" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/fl_left_textview_style"
+                    android:text="升级为企业群" />
+
+                <CheckBox
+                    style="@style/checkBox_switch_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:focusable="false" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/fl_left_textview_style"
+                        android:text="仅群主可管理" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="修改群名称，添加群成员"
+                        android:textColor="@color/font_color_999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <CheckBox
+                    style="@style/checkBox_switch_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:focusable="false" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/fl_left_textview_style"
+                    android:text="置顶聊天" />
+
+                <CheckBox
+                    style="@style/checkBox_switch_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:focusable="false" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/fl_left_textview_style"
+                    android:text="消息免打扰" />
+
+                <CheckBox
+                    style="@style/checkBox_switch_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:focusable="false" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <Button
+                style="@style/button_style_rectangle"
+                android:text="清空聊天纪录" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <Button
+                style="@style/button_style_rectangle"
+                android:text="举报" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <Button
+                style="@style/button_style_rectangle"
+                android:text="转让群组" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <Button
+                style="@style/button_style_fun"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_red_radius_bg"
+                android:text="删除并退出" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

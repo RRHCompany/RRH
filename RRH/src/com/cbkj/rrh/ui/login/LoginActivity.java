@@ -27,8 +27,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	}
 
 	private void initView() {
-		TextView titleView = (TextView) this.findViewById(R.id.header_title_view);
-		titleView.setText("登陆");
 		userNameView= (EditText) this.findViewById(R.id.me_login_mobile_et);
 		passwordView= (EditText) this.findViewById(R.id.me_login_password_et);
 		loginButton = (Button) this.findViewById(R.id.me_login_bt);

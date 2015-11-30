@@ -3,10 +3,8 @@ package com.cbkj.rrh.code.im.rong;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.RongIMClient.ErrorCode;
-
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.cbkj.rrh.comment.utils.SystemUtils;
@@ -47,8 +45,10 @@ public class RongCore {
 	             */
 	            @Override
 	            public void onSuccess(String userid) {
+	            	RongCloudEvent.getInstance().setOtherListener();
 	                Intent intent=new Intent(context,MainActivity.class);
 	                context.startActivity(intent);
+	                
 //	                startActivity(new Intent(LoginActivity.this, MainActivity.class));
 //	                finish();
 	            }

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/toggle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/fl_left_textview_style"
+                    android:text="群备注" />
+
+                <TextView
+                    style="@style/fl_right_textview_style"
+                    android:text="地主" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/fl_left_textview_style"
+                    android:text="该企业职位" />
+
+                <TextView
+                    style="@style/fl_right_textview_style"
+                    android:text="市场总监" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="展示我的资料"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    style="@style/checkBox_switch_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:focusable="false" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共享位置信息"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    style="@style/checkBox_switch_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:focusable="false" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+
+            <FrameLayout
+                style="@style/button_style_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群消息免打扰"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    style="@style/checkBox_switch_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:focusable="false" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_light_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

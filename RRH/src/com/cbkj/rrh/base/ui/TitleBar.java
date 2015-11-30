@@ -21,7 +21,9 @@ public class TitleBar implements OnClickListener{
 	private ImageView backView;
 	private TitleBarListener titleBarListener;
 	private MenuListener menuListener;
-	
+	public TitleBar(Activity activity){
+		this(activity, null, null,null);
+	}
 	public TitleBar(Activity activity,int title){
 		this(activity, null, null,null);
 		titleView.setText(activity.getResources().getString(title));
@@ -63,12 +65,16 @@ public class TitleBar implements OnClickListener{
 	public void setTitle(int title){
 		titleView.setText(activity.getResources().getString(title));
 	}
+	//设置标题
+	public void setTitle(String title){
+		titleView.setText(title);
+	}
 	//设置其他按钮
 	public void setOther(String text,int icon,Object tag){
 		if(text==null||text.equals("")){
 			otherView.setText("");
 		}else{
-			otherView.setText("");
+			otherView.setText(text);
 		}
 		otherView.setTag(tag);
 		if(icon==0){
